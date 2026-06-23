@@ -1,3 +1,10 @@
+terraform {
+  required_providers {
+    kind = {
+      source = "tehcyx/kind"
+    }
+  }
+}
 resource "kind_cluster" "cluster" {
     name = var.cluster_name
     wait_for_ready = true
