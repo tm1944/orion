@@ -1,0 +1,5 @@
+cluster_name      = "orion-local"
+worker_nodes      = 2
+kubeconfig_path   = "~/.kube/orion-local-config"
+ingress_host_port = 8080
+node_image        = "kindest/node:v1.31.0"
